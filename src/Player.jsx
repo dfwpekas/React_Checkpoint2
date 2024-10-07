@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import './Player.css'  
 import players from './players.jsx';
 
 const Player = ({name, age, team, nationality, jerseyNumber, imageURL}) => {
@@ -10,8 +9,8 @@ const Player = ({name, age, team, nationality, jerseyNumber, imageURL}) => {
         height: '18rem'
     }
     return (
-        <Card className="m-5 p-3 w-auto">
-            <Card.Body>
+        <Card className="m-5 p-3 w-auto bg-dark">
+            <Card.Body className='text-light'>
                 <Card.Img style={imageStyle} variant='top' src={imageURL} alt='Footballer Image'/>
                     <Card.Title> <h2> {name} </h2></Card.Title>
                     <Card.Text>

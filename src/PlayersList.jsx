@@ -7,7 +7,7 @@ const PlayersList = () => {
 
     return (
         <Container>
-                <h2 className="text-center" style={{color: 'red', textDecoration: 'underline'}}>My World Class Players List</h2>
+                <h1 className="text-center" style={{color: 'black'}}>My World Class Players Card</h1>
             <Row>
                 {players.map((player, index) => (
                     <Player key={index} {...player}/>
